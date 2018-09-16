@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<! --
+Name: Jessica Boettner
+Date Created: 9/10/18
+Most Recent Revision: 9/16/18
+
+-->
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, intial-scale=1, shrink-to-fit=no">
+
+	<script type="text/JavaScript" src="luckyseven.js"> </script> 
+	
+	<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+	
+	<title> Lucky Sevens </title>
+
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        rel="stylesheet" type="text/css" />
+
+	<style>
+		body {font-family: 'Rubik', sans-serif; }
+		main {font-size: 2em;}
+		hr {width: 50%; border-radius: 2px; color: black;}
+		button {border: 2px solid black; box-shadow: 3px 3px gray; background-color: white; font-weight: bold;}
+		input {border: 2px solid black; text-align: center;}
+		h1 {font-size:4em;}
+		
+	</style>
+</head>
+
+<body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+<div class="container">
+	<center>
+
+	<header> 
+		<h1> Lucky Sevens </h1>
+	</header>
+<main>
+	<strong> Starting Bet: </strong> &nbsp; &nbsp; <input type="text" onfocus="this.value=''" id="inputBet" placeholder="$0.00" style="width:5em" />
+	
+	<br />
+	<br />
+	
+	<button onclick="playGame()" id="again"> Play </button>
+	
+	<br />
+
+	<div id="result">
+	</div>
+
+	</center>
+</main>
+	<footer>
+		<p> &copy; Jessica Boettner. All rights reserved. </p>
+	</footer>
+
+</div>
+</body>
+</html>
